@@ -39,6 +39,10 @@ app.use('/', express.static('./lp-store-ui'));
 // Middleware for error handling
 app.use(logErrors);
 
-app.listen(port, (err) => {
-    console.log(`License Plate server listening on ${port}`)
-});
+module.exports = app;
+
+if (require.main === module) {
+    app.listen(port, (err) => {
+        console.log(`License Plate server listening on ${port}`)
+    });
+}

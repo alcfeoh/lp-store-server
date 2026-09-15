@@ -4,7 +4,7 @@
   "description": "License plate store server for tech training purposes",
   "dependencies": {
     "cors": "^2.8.4",
-    "express": "^5.2.1"
+    "express": "^4.22.3"
   },
   "devDependencies": {},
   "scripts": {
